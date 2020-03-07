@@ -51,3 +51,44 @@ princess.remove(mn)
 
 # pass by value vs pass by ref
 https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
+
+
+#count in list
+import collections
+a = [1,1,1,1,2,2,2,2,3,3,4,5,5]
+counter=collections.Counter(a)
+print(counter)
+# Counter({1: 4, 2: 4, 3: 2, 5: 2, 4: 1})
+print(counter.values())
+# [4, 4, 2, 1, 2]
+print(counter.keys())
+# [1, 2, 3, 4, 5]
+print(counter.most_common(3))
+# [(1, 4), (2, 4), (3, 2)]
+
+# create a set out of a list
+chars = sys.stdin.readline()[:-1]
+chars_set = set(chars)
+# add()	Adds an element to the set
+# clear()	Removes all the elements from the set
+# copy()	Returns a copy of the set
+# difference()	Returns a set containing the difference between two or more sets
+# difference_update()	Removes the items in this set that are also included in another, specified set
+# discard()	Remove the specified item
+# intersection()	Returns a set, that is the intersection of two other sets
+# intersection_update()	Removes the items in this set that are not present in other, specified set(s)
+# isdisjoint()	Returns whether two sets have a intersection or not
+# issubset()	Returns whether another set contains this set or not
+# issuperset()	Returns whether this set contains another set or not
+# pop()	Removes an element from the set
+# remove()	Removes the specified element
+# symmetric_difference()	Returns a set with the symmetric differences of two sets
+# symmetric_difference_update()	inserts the symmetric differences from this set and another
+# union()	Return a set containing the union of sets
+# update()	Update the set with the union of this set and others
+
+#string/char manipulation
+x.islower()
+x.isupper()
+x.lower()
+x.upper()
